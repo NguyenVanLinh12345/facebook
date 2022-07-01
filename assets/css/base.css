@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 62.5%;
+}
+li{
+    list-style-type: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.sidebar_left{
+    background-color: rgb(240,242,245);
+    position: fixed;
+    top: 5.6rem;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    padding: 0.8rem;
+    z-index: 100;
+}
+
+.sidebar_right{
+    background-color: rgb(240,242,245);
+    position: fixed;
+    top: 5.6rem;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    z-index: 100;
+}
+
+.body{
+    margin-top: 5.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -2rem;
+    padding-bottom: 2rem;
+
+    padding-top: 3.2rem;
+    width: 50%;
+    background-color: rgb(240,242,245);
+    min-height: 50rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.list_post{
+    background-color: rgb(240,242,245);
+    width: 50%;
+    min-height: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 0.8rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.body_block{
+    margin-top: 2rem;
+    min-height: 4rem;
+    width: 80%;
+    border-radius: 1rem;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ================ scrollbar ======================== */
+.scrollbar{
+    overflow-y: scroll;
+}
+.scrollbar::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  
+  /* Track */
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 0.8rem;
+  }
+   
+  /* Handle */
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2); 
+    border-radius: 0.8rem;
+    opacity: 0.3;
+  }
+  
+  /* Handle on hover */
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    opacity: 0.5;
+  }
+
+
+  /* ============== img ================== */
+.img{
+    display: inline-block;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+.img100p{
+    height: 42rem;
+    width: 100%;
+}
+.img108{
+    height: 10.8rem;
+    width:  10.8rem;
+}
+.img80{
+    height: 8rem;
+    width: 8rem;
+}
+.img56{
+    height: 5.6rem;
+    width: 5.6rem;
+  }
+.img40{
+      height: 4rem;
+      width: 4rem;
+    }
+.img36{
+    height: 3.6rem;
+    width: 3.6rem;
+}
+.img28{
+    height:2.8rem;
+    width:2.8rem;
+}
+.img_bd{
+    border: 0.01rem solid rgb(234, 217, 193);
+}
+.img_bd2{    
+    border: 0.4rem solid #408ff0;
+}
+.img_bd3{    
+    border: 0.4rem solid #fff;
+}
+/* ============== icons =============== */
+.icon28{
+    font-size: 2.8rem;
+}
+.icon20{
+    font-size: 2rem;
+}
+.icon18{
+    font-size: 1.8rem;
+}
+.icon12{
+    font-size: 1.2rem;
+}
+.icon_center28{
+    line-height: 2.8rem;
+}
+.icon_center36{
+    line-height: 3.6rem;
+}
+
+/* =============== font-size ============= */
+.font24{
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+}
+.font15{
+    font-size: 1.5rem;
+}
+.font12{
+    font-size: 1.2rem;
+}
+.font13{
+    font-size: 1.3rem;
+}
+.font8{
+    font-size: 0.8rem;
+}
+/* =============== font weight ============= */
+.fontw500{
+    font-weight: 500;
+}
+.fontw400{
+    font-weight: 400;
+}
+
+/* ================= border-radius ============ */
+.circle{
+    border-radius: 50%;
+}
+.br10{
+    border-radius: 10%;
+}
+.br1r{
+    border-radius: 1rem;
+}
+/* ============== height-width  =================== */
+
+.hw48{
+    height: 4.8rem;
+    width: 4.8rem;
+    text-align: center;
+}
+
+.hw40{
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+}
+.hw36{
+    height: 3.6rem;
+    width: 3.6rem;
+    text-align: center;
+}
+.hw32{
+    height: 3.2rem;
+    width: 3.2rem;
+    text-align: center;
+}
+.hw28{
+    height: 2.8rem;
+    width: 2.8rem;
+    text-align: center;
+}
+.hw18{
+    height: 1.8rem;
+    width: 1.8rem;
+    text-align: center;
+}
+.hw10{
+    height: 1rem;
+    width: 1rem;
+}
+.w100p{
+    width: 100%;
+}
+.max_h400{
+    max-height: 40rem;
+}
+.max_w100p{
+    max-width: 100%;
+}
+.min_hw2{
+    min-height: 2rem;
+    min-width: 2rem;
+}
+
+
+/* =============== flex-box ============== */
+.flex_between_center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex_center_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex_end_center{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ============ background =============== */
+.bg1{
+    background-color: #E4E6Eb;
+}
+.bg2{
+    background-color: #1B74E4;
+}
+.bg3{
+    background-color: #fff;
+}
+.bg4{
+    background-color: #c9d8f0;
+}
+/* ============ margin ================ */
+.mg_lr16{    
+    margin-left: 1.6rem;
+    margin-right: 1.6rem ;
+}
+.mg_lr8{    
+    margin-left: 0.8rem;
+    margin-right: 0.8rem ;
+}
+.mg_lr4{    
+    margin-left: 0.4rem;
+    margin-right: 0.4rem ;
+}
+.mg_l8{    
+    margin-left: 0.8rem;
+}
+.mg_l4{    
+    margin-left: 0.4rem;
+}
+.mg_t4{
+    margin-top: 0.4rem;
+}
+.mg_t8{
+    margin-top: 0.8rem;
+}
+.mg_bt8{
+    margin-bottom: 0.8rem;
+}
+.mg_lr-16{
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+}
+
+/* ============= padding ============== */
+.pd_4_8{
+    padding: 0.4rem 0.8rem;
+}
+.pd_4_16{
+    padding: 0.4rem 1.6rem;
+}
+.pd_4_2{
+    padding: 0.4rem 0.2rem;
+}
+.pd_4_0{
+    padding: 0.4rem 0;
+}
+.pd_l4{
+    padding-left: 0.4rem;
+}
+.pd_l8{
+    padding-left: 0.8rem;
+}
+.pd_t4{
+    padding-top: 0.4rem;
+}
+.pd_bt48{
+    padding-bottom: 48rem;
+}
+.pd_bt16{
+    padding-bottom: 1.6rem;
+}
+.pd16{
+    padding: 1.6rem;
+}
+.pd_lr16{
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+
+/* ================ color ================== */
+.color_link{    
+    color: #65676B;
+}
+.color_link-blue{
+    color: #1B74E4;
+}
+.color_text{
+    color: #050505;
+}
+.color_black{
+    color: #000;
+}
+.color_white{
+    color: #fff;
+}
+.color_i{
+    color: var(--i);
+}
+/* =============== hover ====================== */
+.hv{
+    transition: all 0.1s linear 0s;
+    cursor: pointer;
+}
+.hv:hover{
+    background-color: #E4E6Eb;
+}
+.hover_a{
+    cursor: pointer;
+}
+.hover_a:hover{
+    text-decoration: underline;
+}
+
+
+/* ================= border ===================== */
+
+.boder_bottom{
+    border-bottom: 0.01rem solid #a1a4a8;
+    padding-bottom: 1.6rem;
+}
+.boder_bottom_no_padding{
+    border-bottom: 0.01rem solid #a1a4a8;
+}
+.no_border{
+    border: none;
+    padding: 0;
+}
+
+/* ================== shadow ==================== */
+
+.shadown1{
+    box-shadow: 0 0 0.2rem 0.1rem rgba(0,0,0,0.2);
+}
+
+ /* ======================== text-align ================ */
+ .text_align_left{
+    text-align: left;
+ }
+ /* ================ hiden ================= */
+ .hiddenx{
+    overflow-x: hidden;
+ }
+ .hiddeny{
+    overflow-y: hidden;
+ }
