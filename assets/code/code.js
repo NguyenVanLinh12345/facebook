@@ -142,7 +142,7 @@ menu_bar_items.forEach(function(value,index){
     list_items_search.push(removeVietnameseTones(value.querySelector('.mypage_content p').innerText.toLowerCase()));
 })
 
-menu_bar_input.addEventListener('change',function(){
+menu_bar_input.addEventListener('keyup',function(){
     var val_input = removeVietnameseTones(menu_bar_input.value.toLowerCase());
     
     list_items_search.forEach(function(value,index){ 
