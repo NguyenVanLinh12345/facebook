@@ -227,7 +227,6 @@ menu_bar_input.addEventListener('keyup',function(){
 // open-close modal-post..... END ==========================================
 
 // open-close modal-room..... START ========================================
-
 ;(function(){
     var modal_update = document.querySelector(".js-creat_room");
     var modal_content = modal_update.querySelector(".upload_content");
@@ -250,5 +249,4 @@ menu_bar_input.addEventListener('keyup',function(){
        event.stopPropagation();
    })
 })();
-
 // open-close modal-room..... END ==========================================
