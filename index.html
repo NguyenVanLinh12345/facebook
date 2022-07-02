@@ -15,8 +15,28 @@
 
 </head>
 <body>
+    <div class="upload_modal js-creat_post">
+        <div class="upload_content">
+            <div class="boder_bottom_no_padding icon_fa flex_center_center">
+                <h3 class="font24 fontw500 line_height50">Tạo bài viết</h3>
+                <span class="material-symbols-outlined room_icon_right circle hw36 icon28 icon_center36 bg4 hv js-close_modal">close</span>
+            </div>
+            <img class="img img100p" src="./assets/img/not_found.jpg" alt="not found">
+        </div>
+    </div>
+
+    <div class="upload_modal js-creat_room">
+        <div class="upload_content">
+            <div class="boder_bottom_no_padding icon_fa flex_center_center">
+                <h3 class="font24 fontw500 line_height50">Tạo phòng họp mặt</h3>
+                <span class="material-symbols-outlined room_icon_right circle hw36 icon28 icon_center36 bg4 hv js-close_modal">close</span>
+            </div>
+            <img class="img img100p" src="./assets/img/not_found.jpg" alt="not found">
+        </div>
+    </div>
+
    <div id="main">
-    
+
     <div class="sidebar_left scrollbar pd_4_8 js-sidebar_left">                    
 
                 <ul class="mg_t8 boder_bottom ul_leftbar js-ul_leftbar">
@@ -1340,22 +1360,22 @@
             <div name="my think" class="body_block pd16 shadown1">
                 <div class="flex_between_center boder_bottom">
                     <a href="#"><img src="./assets/img/avatar.jpg" alt="avatar" class="img img40 circle"></a>
-                    <input type="button" class="chat_search mg_l8 color_link hv text_align_left max_w100p" value="Linh ơi, bạn đang nghĩ gì thế?">
+                    <input type="button" class="chat_search mg_l8 color_link hv text_align_left max_w100p js-open_modal_update" value="Linh ơi, bạn đang nghĩ gì thế?">
                 </div>
 
                 <div class="flex_between_center">
 
-                    <div class="flex_between_center mg_t8 hv br1r pd_4_2">
+                    <div class="flex_between_center mg_t8 hv br1r pd_4_2 js-open_modal_update">
                         <span class="material-symbols-outlined color_i" style="--i: rgb(244, 94, 94);">emergency_recording</span>
                         <p class="font15 fontw500 color_link mg_l4">Video trực tiếp</p>
                     </div>
 
-                    <div class="flex_between_center mg_t8 hv br1r pd_4_2">
+                    <div class="flex_between_center mg_t8 hv br1r pd_4_2 js-open_modal_update">
                         <span class="material-symbols-outlined color_i" style="--i: rgb(88, 104, 222);">photo_library</span>
                         <p class="font15 fontw500 color_link mg_l4">Ảnh/video</p>
                     </div>
 
-                    <div class="flex_between_center mg_t8 hv br1r pd_4_2 m0">
+                    <div class="flex_between_center mg_t8 hv br1r pd_4_2 m0 js-open_modal_update">
                         <span class="material-symbols-outlined color_i" style="--i: rgb(235, 162, 53);">mood</span>
                         <p class="font15 fontw500 color_link mg_l4">Cảm xúc/Hoạt động</p>
                     </div>
@@ -1367,7 +1387,7 @@
             <div name="creaat room" class="body_block pd_4_8 shadown1 hiddenx icon_fa flex_between_center js-box_room">
                 <div class="flex_between_center js-list_room list_room">
 
-                    <a href="#" class="creat_room flex_between_center">
+                    <a href="#" class="creat_room flex_between_center js-open_room">
                         <span class="material-symbols-outlined icon28 color_i" style="--i: rgb(246, 55, 55);">video_call</span>
                         <p class="mg_l8 color_link-blue font15 fontw500">Tạo phòng họp mặt</p>
                     </a>

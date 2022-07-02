@@ -248,6 +248,7 @@
 .downbar{
     margin-right: 0.8rem;
     width: 36rem;
+    max-width: 100%;
     height: 50rem;
     box-shadow: 0 0.4rem 1rem 0.08rem rgba(0,0,0,0.2);
     border-radius: 0.5rem;
@@ -423,7 +424,38 @@
 .list_room{
     transition: transform 0.4s ease-in-out 0s;
 }
+.upload_modal{
+    z-index: 1100;
+     position: fixed;
+     top: 0; left: 0; right: 0; bottom: 0;
+     background-color: rgba(255,255,255,0.8);
 
+     /* display: flex; */
+     display: none;
+     justify-content: center;
+     align-items: center;
+}
+
+.upload_content{
+    width: 50rem;
+    max-width: calc(100% - 1.6rem);
+    height: 50rem;
+    overflow-y: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 0.4rem 0.2rem rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    animation: modal_open 0.15s linear 0s;
+}
+@keyframes modal_open{
+    from{
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .ds0{
     display: none;
 }

@@ -184,6 +184,9 @@ a{
 .font8{
     font-size: 0.8rem;
 }
+.line_height50{
+    line-height: 5rem;
+}
 /* =============== font weight ============= */
 .fontw500{
     font-weight: 500;
