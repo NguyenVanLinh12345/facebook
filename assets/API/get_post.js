@@ -14,7 +14,7 @@ import { fake_api_post } from './list_post.js';
         .then(function(data){       
             data.forEach(function(value, index){ 
                 document.querySelector('.list_post').innerHTML += 
-                '<div name="Bài đăng" class="body_block shadown1"><div class="flex_between_center pd16"><div class="messenger"><img src="'+ value.avatar +'" alt="information_avatar" class="img img40 circle shadown1"><div class="mg_l8"><p class="font15 fontw500 color_black hover_a">Bùi Phương Thảo</p><div class="messenger"><p class="font15 fontw500 color_link hover_a">'+ value.mood +'</p><span class="font12 color_black mg_l8 hover_a">'+ value.time_public +'<span class="material-symbols-outlined icon12 color_link">public</span></span></div></div></div><span class="material-symbols-outlined icon_center36 hw36 fontw500 icon28 bg3 hv circle">more_horiz</span></div>'
+                '<div name="Bài đăng" class="body_block shadown1"><div class="flex_between_center pd16"><div class="messenger"><img src="'+ value.avatar +'" alt="information_avatar" class="img img40 circle shadown1"><div class="mg_l8"><p class="font15 fontw500 color_black hover_a">'+ value.name +'</p><div class="messenger"><p class="font15 fontw500 color_link hover_a">'+ value.mood +'</p><span class="font12 color_black mg_l8 hover_a">'+ value.time_public +'<span class="material-symbols-outlined icon12 color_link">public</span></span></div></div></div><span class="material-symbols-outlined icon_center36 hw36 fontw500 icon28 bg3 hv circle">more_horiz</span></div>'
                       
                       + '<div class="pd_4_16 pd_bt16"><p class="font15 color_black">'+ value.text +'</p></div>'
                 
