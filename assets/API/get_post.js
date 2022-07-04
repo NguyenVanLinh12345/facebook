@@ -116,13 +116,48 @@ import { fake_api_ad } from './list_post.js';
             var list_ad = document.querySelectorAll('.js-ad li a');
             var count = 0;
     
-            // setInterval(()=>{
-            //     count++; console.log(count);
-            //     for(var i=0;i < list_ad.length;i++){
-            //         list_ad[i].querySelector('img').src = data[count % items].img;
-            //         if(count == items) count = -1;
-            //     }
-            // },1000)
+            setInterval(()=>{
+                count++;
+                for(var i=0;i < list_ad.length;i++){
+                    list_ad[i].querySelector('img').src = data[(i+count)%items].img;                    
+                    var lists_text =  list_ad[i].querySelectorAll('p');
+                    lists_text[0].innerText = data[(i+count)%items].text;
+                    lists_text[1].innerText = data[(i+count)%items].link;
+                    if(count == items) count = 0;
+                }
+            },5000)
+        })
+        .catch(function(){
+            console.log("lỗi ở quảng cáo right sidebar")
+        })
+})()
+// ads end ===================================
+
+import { fake_api_story } from './list_post.js';
+(function(){
+    const getApi_ad = ()=>{
+        return new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                return resolve(fake_api_story);
+            },250);
+        })
+    }
+    
+    getApi_ad()
+        .then(function(data){
+            var items = data.length;
+            var list_ad = document.querySelectorAll('.story_extra');
+            var count = 0;
+
+            
+            setInterval(()=>{
+                count++;
+                for(var i=0;i < list_ad.length;i++){
+                    list_ad[i].querySelector('img').src = data[(i+count)%items].img;                    
+                    var lists_text =  list_ad[i].querySelectorAll('p');
+                    if(count == items) count = 0;
+                }
+            },8000)
         })
         .catch(function(){
             console.log("lỗi ở quảng cáo right sidebar")

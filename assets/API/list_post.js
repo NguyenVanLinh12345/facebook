@@ -78,13 +78,59 @@ export const fake_api_room = [
 
 export const fake_api_ad = [
     {
+        id: 0,
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNuCwn1z0KuBXWsUeHS0ScnwrsoYynxlUjMEi3jvrdobec4DBUvMmEbwz6Lo0DDMEHhYk&usqp=CAU',
         text: 'Nếu vui chơi lấm bẩn mang tuổi xuân về bên ba mẹ, Tết này cứ tha hồ lấm bẩn',
         link: 'shoppe.vn'
     },
     {
+        id: 1,
         img: 'https://i.pinimg.com/originals/ed/58/a1/ed58a1b7108722c11908e253ef7d726e.jpg',
         text: 'Congate - Ngừa sâu răng tối đa',
         link: 'lazada.vn'
+    },
+    {
+        id: 2,
+        img: 'https://i.ytimg.com/vi/sASX6PLWLjc/maxresdefault.jpg',
+        text: 'Vinamilk - Mắt sáng dáng cao',
+        link: 'tiki.vn'
+    }
+]
+
+export const fake_api_story = [
+    {
+        id: 0,
+        img: 'https://thienluc.vn/gai-han-quoc-dep/image-35-hinh-anh-girl-xinh-han-quoc-anh-gai-dep-korea-dang-nuot-na_48_30873_700.jpg',
+        avatar: 'https://i.pinimg.com/736x/5f/a4/43/5fa4430a4252cc135a4cbf6c5a06ecd0.jpg'
+    },
+    {
+        id: 1,
+        img: 'https://image.winudf.com/v2/image1/YXBwczIwMTYubGl3cC5rb3JlYW4yMThfc2NyZWVuXzBfMTU5ODc0NzI3OV8wMDU/screen-0.jpg?fakeurl=1&type=.webp',
+        avartar: 'https://i.pinimg.com/originals/c1/a2/66/c1a266d29b034774849dca740173e1aa.jpg'
+    },
+    {
+        id: 2,
+        img: 'https://pbs.twimg.com/media/FPCRoKKWUAcCsZl.jpg',
+        avartar: 'https://i.pinimg.com/474x/6c/d6/20/6cd62099160a7cbeee677fa6155013d1.jpg'
+    },
+    {
+        id: 3,
+        img: 'https://photo-cms-kienthuc.zadn.vn/zoom/800/uploaded/hongngan/2021_12_11/b/me-man-nhan-sac-nhu-tien-nu-cua-hot-girl-tu-nhan-layeu-quai.jpeg',
+        avartar: 'https://qph.cf2.quoracdn.net/main-qimg-5a6efb9f21fd4ebe2e4417c9f4658e40-lq'
+    },
+    {
+        id: 4,
+        img: 'https://wallpaperaccess.com/full/3672694.jpg',
+        avartar: 'https://cdna.artstation.com/p/assets/images/images/013/104/982/large/lolv-arata-asset.jpg?1538068016'
+    },
+    {
+        id: 5,
+        img: 'https://cdna.artstation.com/p/assets/images/images/013/104/982/large/lolv-arata-asset.jpg?1538068016',
+        avartar: 'https://qph.cf2.quoracdn.net/main-qimg-ecc013aa7f90d46f891559e580f26301-pjlq'
+    },
+    {
+        id: 6,
+        img: 'https://qph.cf2.quoracdn.net/main-qimg-ecc013aa7f90d46f891559e580f26301-pjlq',
+        avartar: 'https://truyen2u.net/cover/ulzzang-girls-175366120.jpg'
     }
 ]
